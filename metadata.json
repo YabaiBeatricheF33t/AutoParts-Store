@@ -1,0 +1,8 @@
+{
+  "name": "AutoParts Store",
+  "description": "Курсовая работа: Магазин автозапчастей",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
