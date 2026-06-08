@@ -28,7 +28,6 @@ export function Navigation() {
             </div>
             <div className="ml-6 flex items-center space-x-8">
               {navItems.map((item) => {
-                // Если пункт требует прав администратора, а текущая роль не admin - скрываем его из меню
                 if (item.requireAdmin && role !== 'admin') return null;
 
                 const Icon = item.icon;
@@ -52,7 +51,6 @@ export function Navigation() {
             </div>
           </div>
           
-          {/* Переключатель ролей (Симуляция авторизации) */}
           <div className="flex items-center">
             <div className="flex items-center bg-gray-100 p-1 rounded-lg border border-gray-200">
               <ShieldAlert className="w-4 h-4 text-gray-500 ml-2 mr-1" />
