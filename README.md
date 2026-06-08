@@ -1,20 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Каталог автозапчастей (Курсовой проект)
 
-# Run and deploy your AI Studio app
+Веб-приложение для магазина автомобильных запчастей с системой управления доступом на основе ролей (RBAC).
 
-This contains everything you need to run your app locally.
+## Стек технологий
+- **Фреймворк:** Next.js 15 (App Router)
+- **Язык интерфейса:** React, TypeScript
+- **Стилизация:** Tailwind CSS, Lucide Icons
+- **Валидация данных:** Zod
 
-View your app in AI Studio: https://ai.studio/apps/97569698-1503-4a69-9321-ad6fa8646b5f
+## Функционал
+- **Каталог товаров** (просмотр списка запчастей).
+- **Корзина покупок** (добавление, удаление, подсчет суммы) с сохранением состояния через LocalStorage.
+- **Управление доступом (RBAC)**: поддержка ролей Гость, Покупатель и Администратор.
+- **REST API**: эндпоинты для работы с пользователями и товарами (GET, POST валидация).
 
-## Run Locally
+## Установка и запуск (для разработчиков)
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Клонируйте репозиторий:
+   \`git clone https://github.com/ВАШ_НИК/AutoParts-Store.git\`
+2. Установите зависимости:
+   \`npm install\`
+3. Запустите сервер для разработки:
+   \`npm run dev\`
+4. Откройте \`http://localhost:3000\` в браузере.
